@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<script type="text/javascript">
+		function calc(x, callback) {
+		  setTimeout(function(){var result = 2 * x; callback(result);},(Math.floor(Math.random() * (1000 - 0 + 1)) + 0));
+		}
+		for (var x = 0; x < 10; x++) {
+			calc(x, function(e){console.log(e)});
+		}
+	</script>
+</body>
+</html>
