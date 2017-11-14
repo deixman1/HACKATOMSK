@@ -6,6 +6,11 @@
 </head>
 <body>
 	<script type="text/javascript">
+		/*
+		>функция должна вызыватся асинхронно + с разным интервалом задержки
+		>ответы должны выводится по порядку
+		WAT!?!?!?!?!??!?!?!?!?!?!?!?!?!
+		*/
 		function calc(x, callback) {
 		  setTimeout(function(){var result = 2 * x; callback(result);},(Math.floor(Math.random() * (1000 - 0 + 1)) + 0));
 		}
